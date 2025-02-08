@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Software Engineering Challenges:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Device Fragmentation"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. OS Fragmentation"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Security vulnerabilities"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Rapid Changes"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Low Tolerance"
+            android:textSize="18sp"
+            android:padding="4dp"/>
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Activity"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>
