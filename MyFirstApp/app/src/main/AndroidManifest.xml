@@ -21,10 +21,6 @@
         <activity
             android:name=".SecondActivity"
             android:exported="false" />
-
-        <activity android:name=".ImageActivity"
-            android:label="Capture Image"
-            android:exported="false" />
     </application>
 
 </manifest>
