@@ -38,6 +38,7 @@ class ImageActivity : AppCompatActivity() {
         captureImageBtn.setOnClickListener {
             val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             cameraLauncher.launch(cameraIntent)  // New way to launch camera
+            // Adding new comment
         }
     }
 
