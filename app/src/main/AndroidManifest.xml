@@ -20,7 +20,12 @@
         <!-- SecondActivity in Kotlin -->
         <activity
             android:name=".SecondActivity"
-            android:exported="false" />
+            android:exported="true">
+        <intent-filter>
+            <action android:name="com.example.androidapp.ACTION_SHOW_SECOND" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
 
         <activity android:name=".ImageActivity"
             android:label="Capture Image"
