@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+<permission android:name="com.example.myfirstapp.MSE412"
+            android:protectionLevel="dangerous" />
+    <uses-permission android:name="com.example.myfirstapp.MSE412" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.MyFirstApp">
+
+        <!-- SecondActivity in Kotlin -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="true"
+            android:permission="com.example.myfirstapp.MSE412">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.ACTION_SHOW_SECOND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ImageActivity"
+            android:label="Capture Image"
+            android:exported="false" />
 
         <!-- MainActivity in Kotlin -->
         <activity android:name=".MainActivity"
@@ -16,20 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- SecondActivity in Kotlin -->
-        <activity
-            android:name=".SecondActivity"
-            android:exported="true">
-        <intent-filter>
-            <action android:name="com.example.androidapp.ACTION_SHOW_SECOND" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-    </activity>
-
-        <activity android:name=".ImageActivity"
-            android:label="Capture Image"
-            android:exported="false" />
     </application>
 
 </manifest>
